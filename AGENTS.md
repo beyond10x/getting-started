@@ -5,6 +5,17 @@ The contract for changing the public entry point to `beyond10x`.
 Org-wide naming, former-brand and coordinated-migration rules live in `atlas/AGENTS.md`. This file
 adds the rules specific to the introductory site.
 
+## Serves
+
+The objectives of the collection this repository moves, by id from `atlas/ROADMAP.md` — the only
+cross-repository roadmap, and the page that says what each id means and which evidence closes it:
+
+- **O5 — the generic agent platform.** The public door: the four ideas bottom-up, with current boundaries stated truthfully, for the person who will one day sign up.
+- **O2 — decisions as data, with evidence.** The reading path *is* the evidence discipline, explained.
+
+A change here that moves none of these is a question for the operator, not a task.
+`atlas/scripts/check-map.sh` fails a repository whose `AGENTS.md` names no objective.
+
 ## What this repository is
 
 `website/` is the public front door. It explains four components from the bottom up: Engineering
