@@ -12,6 +12,11 @@ system from a deterministic state change to a governed action in the outside wor
 4. **connectors** — catalogue external operations, bind credentials to connections, and admit an
    invocation only through explicit authority and grants.
 
+[`aep-service`](https://beyond10x.github.io/aep-service/) is the public developer-preview deployment
+surface for the third idea: a multi-tenant HTTP service that applies Engineering Protocols contracts
+to centrally stored planning entities while Entity Runtime supplies the store abstraction. It is a
+shipped bridge between those projects, not a fifth conceptual layer.
+
 This is a reading order, not a claim that the three repositories are already a dependency stack.
 The site names the current boundaries and maturity of each component plainly.
 

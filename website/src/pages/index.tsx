@@ -285,9 +285,18 @@ export default function Home(): ReactNode {
               <p className={styles.keyPoint}>
                 The model still reasons. The protocol decides what the resulting facts permit.
               </p>
+              <p className={styles.statusNote}>
+                <strong>AEP Service</strong> is the public developer-preview deployment surface: a
+                multi-tenant HTTP service for central protocol entities, activity and projections.
+                It consumes the public contracts of Engineering Protocols and Entity Runtime; it
+                does not turn the two libraries into a dependency stack.
+              </p>
               <div className={styles.inlineActions}>
                 <Link className={styles.textAction} href="https://beyond10x.github.io/engineering-protocols/">
                   Explore the protocols <span aria-hidden="true">↗</span>
+                </Link>
+                <Link className={styles.textAction} href="https://beyond10x.github.io/aep-service/">
+                  Try AEP Service <span aria-hidden="true">↗</span>
                 </Link>
                 <Link className={styles.mutedAction} href="https://github.com/beyond10x/engineering-protocols">
                   Source on GitHub
@@ -398,6 +407,19 @@ production.write denied
                 </Link>
               </article>
               <article>
+                <span>PUBLIC PREVIEW</span>
+                <Heading as="h3">Runtime + protocols → service</Heading>
+                <p>
+                  <code>aep-service</code> combines the published protocol contracts and runtime
+                  store interface behind a multi-tenant REST API. The service, generated OpenAPI
+                  description and operations guide are public; production identity is deliberately
+                  not claimed yet.
+                </p>
+                <Link href="https://beyond10x.github.io/aep-service/">
+                  Open the service guide ↗
+                </Link>
+              </article>
+              <article>
                 <span>SEPARATE TODAY</span>
                 <Heading as="h3">Protocols ↛ connectors</Heading>
                 <p>
@@ -434,6 +456,9 @@ production.write denied
               </Link>
               <Link href="https://beyond10x.github.io/engineering-protocols/">
                 <span>My engineering rules live in prompts</span><strong>Start with Protocols ↗</strong>
+              </Link>
+              <Link href="https://beyond10x.github.io/aep-service/">
+                <span>My protocol data needs one shared service</span><strong>Try AEP Service ↗</strong>
               </Link>
               <a href="#connectors">
                 <span>My agents need bounded external tools</span><strong>Understand Connectors ↑</strong>

@@ -31,6 +31,8 @@ authority for their research, APIs or designs.
   semantics.
 - `engineering-protocols/README.md`, its normative consolidated design and its generated status
   page own protocol semantics and delivery state.
+- `aep-service/README.md`, its OpenAPI document and its public operations guide own the hosted
+  developer-preview surface and current service maturity.
 - `connectors/README.md`, `docs/design/01-domain-model.md` and `docs/design/02-architecture.md` own
   the connector model and current maturity.
 - `atlas/README.md` owns the cross-repository map.
@@ -44,12 +46,14 @@ invent a compatibility promise here.
    engineering method → governed external reach. Never draw it as a shipped dependency chain.
 2. Adoption of `entity-runtime` by the `engineering-protocols` artifact model is **proposed** until
    the owning repositories and an atlas decision say otherwise.
-3. `connectors` is a separate pre-v1 system today. Do not claim it consumes either of the first two.
-4. Status labels stay visible. A public introduction must distinguish implemented, proposed and
+3. `aep-service` is a shipped bridge, not evidence that either owning library directly depends on
+   the other. It consumes their public contracts to host central, multi-tenant protocol data.
+4. `connectors` is a separate pre-v1 system today. Do not claim it consumes either of the first two.
+5. Status labels stay visible. A public introduction must distinguish implemented, proposed and
    private surfaces.
-5. Detailed reference material stays with its owning component. Link to it instead of copying a
+6. Detailed reference material stays with its owning component. Link to it instead of copying a
    second version here.
-6. Never publish credentials, deployment-local values, adopter-internal material or private
+7. Never publish credentials, deployment-local values, adopter-internal material or private
    operational detail.
 
 ## Website gate

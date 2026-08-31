@@ -67,6 +67,7 @@ const config: Config = {
         {to: '/#engineering-principles', label: 'Principles', position: 'left'},
         {to: '/#entity-runtime', label: 'Entity runtime', position: 'left'},
         {to: '/#engineering-protocols', label: 'Protocols', position: 'left'},
+        {href: 'https://beyond10x.github.io/aep-service/', label: 'AEP Service', position: 'left'},
         {to: '/#connectors', label: 'Connectors', position: 'left'},
         {to: '/#boundaries', label: 'Boundaries', position: 'left'},
         {
@@ -91,6 +92,7 @@ const config: Config = {
               label: 'Engineering Protocols',
               href: 'https://beyond10x.github.io/engineering-protocols/',
             },
+            {label: 'AEP Service', href: 'https://beyond10x.github.io/aep-service/'},
             {label: 'Connectors overview', to: '/#connectors'},
           ],
         },
@@ -107,6 +109,7 @@ const config: Config = {
               label: 'Engineering Protocols',
               href: 'https://github.com/beyond10x/engineering-protocols',
             },
+            {label: 'AEP Service', href: 'https://github.com/beyond10x/aep-service'},
           ],
         },
         {
