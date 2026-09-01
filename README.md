@@ -1,71 +1,43 @@
-# getting-started
+# getting-started compatibility facade
 
-The public front door to `beyond10x`: a bottom-up introduction to the four ideas that take a
-system from evidence-backed intent to a governed action in the outside world.
+This repository is the paused compatibility home of the former beyond10x introductory site. The
+canonical public entry point, ecosystem discovery experience, and technical documentation now live
+at [beyond10x.github.io](https://beyond10x.github.io/).
 
-1. [Engineering principles](https://beyond10x.github.io/agentic-principles/) — research which
-   rules help agents do consequential work safely, and label each claim by the evidence behind it.
-2. [`entity-runtime`](https://beyond10x.github.io/entity-runtime/) — declare state, operations,
-   rules and events as data; let an IO-free kernel decide the transition.
-3. Executable specifications, owned by two standalone sibling projects:
-   - [AEP](https://beyond10x.github.io/aep/) — turn engineering method into typed workflows,
-     evidence gates, permissions, approvals, and completion rules.
-   - [ESS](https://beyond10x.github.io/ess/) — turn system intent into validated models,
-     deterministic artifacts, and conformance suites.
-4. **connectors** — catalogue external operations, bind credentials to connections, and admit an
-   invocation only through explicit authority and grants.
+The repository intentionally remains public, writable, and unarchived so Atlas can maintain the
+permanent [getting-started project Pages URL](https://beyond10x.github.io/getting-started/) as a
+redirect facade. It is not an authored documentation source and must not regain a standalone Pages
+deployer.
 
-[`aep-service`](https://beyond10x.github.io/aep-service/) is the public developer-preview deployment
-surface for AEP: a multi-tenant HTTP service that applies AEP contracts to centrally stored planning
-entities while Entity Runtime supplies the store abstraction. ESS remains standalone and crosses
-the AEP boundary only through its closed conformance report and an optional AEP-side evidence
-adapter.
+## Where to go now
 
-Agent execution has two distinct public surfaces: [Harness](https://beyond10x.github.io/harness/)
-owns the provider-neutral loop, while
-[Metaharness](https://beyond10x.github.io/metaharness/) drives harnesses from outside for
-observation, steering, isolation, and comparison. The landing page lists both from their
-repository-owned discovery manifests.
+- [Start](https://beyond10x.github.io/) — choose the Foundation, Build, Services, or Products path.
+- [Journeys](https://beyond10x.github.io/journeys/) — begin from the outcome you need.
+- [Ecosystem](https://beyond10x.github.io/ecosystem/) — discover every public surface.
+- [Technical documentation](https://beyond10x.github.io/docs/) — browse source-locked repository documentation.
+- [Changes](https://beyond10x.github.io/changes/) — follow cross-repository impact.
 
-This is a reading order, not one dependency stack. The site names the current boundaries and
-maturity of each component plainly.
+## Compatibility contract
 
-Published site: <https://beyond10x.github.io/getting-started/>
+- `b10x.docs.yaml` is `local-only` and `unlisted`; Website does not collect this repository as a
+  public source.
+- `.github/workflows/b10x-docs-pages.yml` is the Atlas-generated, bot-only facade caller.
+- `.github/workflows/pages.yml` validates the legacy source only. It cannot deploy Pages.
+- `website/` is retained as historical, locally buildable material until a separate cleanup removes
+  it. Changes there do not become public documentation.
 
-## Public discovery contract
-
-Each public repository owns a `b10x.docs.yaml` manifest with its audience, journeys, relationships,
-and one concrete adoption outcome. Important cross-repository changes live with the repository
-making the claim under `changes/`; ordinary GitHub releases are added automatically. Atlas invokes
-the exact Git-pinned Docs System CLI to regenerate these committed public derivatives:
-
-- `website/static/ecosystem.json` — discoverable surfaces and adoption actions;
-- `website/static/changes.json` — releases enriched by repository-owned impact records;
-- `website/static/changes/rss.xml` and `feed.json` — subscription formats;
-- `website/static/release-facts.json` — the GitHub release evidence used for the snapshot.
-
-Never edit those derivatives independently. The Atlas `docs snapshot` workflow rebuilds all of
-them together and refuses non-public relationship targets.
-
-## Develop
+Validate the compatibility contract from a complete organization workspace:
 
 ```console
-cd website
-npm ci
-npm start
+cargo run --manifest-path atlas/Cargo.toml -- docs reconcile --workspace . --check
 ```
-
-## Gate
-
-```console
-cd website
-npm run typecheck
-npm run build
-```
-
-The build refuses broken internal links. `.github/workflows/pages.yml` runs the same checks and
-publishes `website/build` to GitHub Pages from `main`.
 
 ## Licence
 
 Apache-2.0. See [LICENSE](LICENSE).
+
+<!-- b10x-docs:start -->
+## Documentation compatibility
+
+Getting Started has been superseded by the [unified beyond10x Website](https://beyond10x.github.io/). This paused repository remains writable only for its Atlas-generated compatibility contract; its [getting-started Pages URL](https://beyond10x.github.io/getting-started/) is a permanent redirect façade.
+<!-- b10x-docs:end -->
