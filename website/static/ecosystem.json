@@ -1,0 +1,589 @@
+{
+  "schema": "b10x-docs-registry/v1",
+  "surfaces": [
+    {
+      "id": "docs",
+      "name": "AEP Service",
+      "summary": "The authenticated command and query authority for centrally managed engineering entities and evidence.",
+      "kind": "service-docs",
+      "canonicalUrl": "https://beyond10x.github.io/aep-service/",
+      "maturity": "development",
+      "availability": "published",
+      "discoverability": "public",
+      "audiences": [
+        "evaluator",
+        "adopter",
+        "developer",
+        "operator"
+      ],
+      "journeys": [
+        "specify",
+        "operate-services"
+      ],
+      "capabilities": [
+        "aep-service",
+        "openapi",
+        "transactional-authority"
+      ],
+      "sections": [
+        {
+          "label": "Quickstart",
+          "url": "https://beyond10x.github.io/aep-service/docs/quickstart",
+          "kind": "quickstart"
+        },
+        {
+          "label": "Architecture",
+          "url": "https://beyond10x.github.io/aep-service/docs/architecture",
+          "kind": "docs"
+        },
+        {
+          "label": "API reference",
+          "url": "https://beyond10x.github.io/aep-service/api",
+          "kind": "api"
+        },
+        {
+          "label": "OpenAPI",
+          "url": "https://beyond10x.github.io/aep-service/openapi.json",
+          "kind": "api"
+        },
+        {
+          "label": "Source",
+          "url": "https://github.com/beyond10x/aep-service",
+          "kind": "source"
+        }
+      ],
+      "relationships": [
+        {
+          "target": "engineering-protocols/docs",
+          "kind": "implements"
+        },
+        {
+          "target": "entity-runtime/docs",
+          "kind": "uses"
+        }
+      ],
+      "accent": "#b99cff",
+      "mark": "website/static/img/mark.svg",
+      "shell": {
+        "integration": "docusaurus",
+        "revision": "6323bfdaf73609247e8dabcc9df410ab280a1960"
+      },
+      "key": "aep-service/docs",
+      "repository": {
+        "id": "aep-service",
+        "url": "https://github.com/beyond10x/aep-service"
+      }
+    },
+    {
+      "id": "docs",
+      "name": "Agentic Principles",
+      "summary": "Evidence-backed principles for safe and efficient agentic work automation.",
+      "kind": "research",
+      "canonicalUrl": "https://beyond10x.github.io/agentic-principles/",
+      "maturity": "experimental",
+      "availability": "published",
+      "discoverability": "public",
+      "audiences": [
+        "evaluator",
+        "researcher",
+        "developer"
+      ],
+      "journeys": [
+        "understand",
+        "build-agents"
+      ],
+      "capabilities": [
+        "evidence-registry",
+        "principle-catalog",
+        "field-notes"
+      ],
+      "sections": [
+        {
+          "label": "Principles",
+          "url": "https://beyond10x.github.io/agentic-principles/principles",
+          "kind": "reference"
+        },
+        {
+          "label": "Research guide",
+          "url": "https://beyond10x.github.io/agentic-principles/research",
+          "kind": "docs"
+        },
+        {
+          "label": "Field notes",
+          "url": "https://beyond10x.github.io/agentic-principles/blog",
+          "kind": "feed"
+        },
+        {
+          "label": "Source",
+          "url": "https://github.com/beyond10x/agentic-principles",
+          "kind": "source"
+        }
+      ],
+      "relationships": [
+        {
+          "target": "engineering-protocols/docs",
+          "kind": "informs"
+        },
+        {
+          "target": "harness/docs",
+          "kind": "informs"
+        },
+        {
+          "target": "metaharness/docs",
+          "kind": "informs"
+        }
+      ],
+      "feeds": [
+        {
+          "label": "Field notes RSS",
+          "url": "https://beyond10x.github.io/agentic-principles/blog/rss.xml",
+          "kind": "feed"
+        }
+      ],
+      "accent": "#43cdbf",
+      "mark": "website/static/img/mark.svg",
+      "shell": {
+        "integration": "docusaurus",
+        "revision": "6323bfdaf73609247e8dabcc9df410ab280a1960"
+      },
+      "key": "agentic-principles/docs",
+      "repository": {
+        "id": "agentic-principles",
+        "url": "https://github.com/beyond10x/agentic-principles"
+      }
+    },
+    {
+      "id": "docs",
+      "name": "Engineering Protocols",
+      "summary": "Typed, portable, machine-executable specifications for performing and proving autonomous engineering work.",
+      "kind": "documentation",
+      "canonicalUrl": "https://beyond10x.github.io/engineering-protocols/",
+      "maturity": "development",
+      "availability": "published",
+      "discoverability": "public",
+      "audiences": [
+        "adopter",
+        "developer",
+        "operator"
+      ],
+      "journeys": [
+        "specify",
+        "build-agents",
+        "operate-services"
+      ],
+      "capabilities": [
+        "aep",
+        "engineering-workflows",
+        "evidence-gates",
+        "contract-generation"
+      ],
+      "sections": [
+        {
+          "label": "Getting started",
+          "url": "https://beyond10x.github.io/engineering-protocols/docs/getting-started",
+          "kind": "quickstart"
+        },
+        {
+          "label": "Concepts",
+          "url": "https://beyond10x.github.io/engineering-protocols/docs/concepts/overview",
+          "kind": "docs"
+        },
+        {
+          "label": "CLI",
+          "url": "https://beyond10x.github.io/engineering-protocols/docs/reference/cli",
+          "kind": "reference"
+        },
+        {
+          "label": "Status",
+          "url": "https://beyond10x.github.io/engineering-protocols/docs/status/where-this-stands",
+          "kind": "status"
+        },
+        {
+          "label": "Source",
+          "url": "https://github.com/beyond10x/engineering-protocols",
+          "kind": "source"
+        }
+      ],
+      "relationships": [
+        {
+          "target": "aep-service/docs",
+          "kind": "specifies"
+        }
+      ],
+      "feeds": [
+        {
+          "label": "Release notes RSS",
+          "url": "https://beyond10x.github.io/engineering-protocols/releases/rss.xml",
+          "kind": "feed"
+        }
+      ],
+      "accent": "#a5d6ff",
+      "mark": "website/static/img/mark.svg",
+      "shell": {
+        "integration": "docusaurus",
+        "revision": "6323bfdaf73609247e8dabcc9df410ab280a1960"
+      },
+      "key": "engineering-protocols/docs",
+      "repository": {
+        "id": "engineering-protocols",
+        "url": "https://github.com/beyond10x/engineering-protocols"
+      }
+    },
+    {
+      "id": "docs",
+      "name": "Entity Runtime",
+      "summary": "Declare entity state, operations, rules, and events as data and let a deterministic kernel decide transitions.",
+      "kind": "documentation",
+      "canonicalUrl": "https://beyond10x.github.io/entity-runtime/",
+      "maturity": "development",
+      "availability": "published",
+      "discoverability": "public",
+      "audiences": [
+        "adopter",
+        "developer"
+      ],
+      "journeys": [
+        "specify",
+        "build-agents",
+        "operate-services"
+      ],
+      "capabilities": [
+        "entity-modeling",
+        "deterministic-decisions",
+        "generated-interfaces"
+      ],
+      "sections": [
+        {
+          "label": "Quickstart",
+          "url": "https://beyond10x.github.io/entity-runtime/docs/guide/getting-started",
+          "kind": "quickstart"
+        },
+        {
+          "label": "Definition language",
+          "url": "https://beyond10x.github.io/entity-runtime/docs/guide/definitions",
+          "kind": "reference"
+        },
+        {
+          "label": "Guarantees",
+          "url": "https://beyond10x.github.io/entity-runtime/docs/guarantees",
+          "kind": "status"
+        },
+        {
+          "label": "Source",
+          "url": "https://github.com/beyond10x/entity-runtime",
+          "kind": "source"
+        }
+      ],
+      "relationships": [
+        {
+          "target": "aep-service/docs",
+          "kind": "uses",
+          "label": "Provides deterministic entity storage semantics"
+        }
+      ],
+      "accent": "#f0b35c",
+      "mark": "website/static/img/mark.svg",
+      "shell": {
+        "integration": "docusaurus",
+        "revision": "6323bfdaf73609247e8dabcc9df410ab280a1960"
+      },
+      "key": "entity-runtime/docs",
+      "repository": {
+        "id": "entity-runtime",
+        "url": "https://github.com/beyond10x/entity-runtime"
+      }
+    },
+    {
+      "id": "docs",
+      "name": "beyond10x — Start here",
+      "summary": "Choose a journey through the public beyond10x research, specifications, runtimes, harnesses, and services.",
+      "kind": "front-door",
+      "canonicalUrl": "https://beyond10x.github.io/getting-started/",
+      "maturity": "development",
+      "availability": "published",
+      "discoverability": "public",
+      "audiences": [
+        "evaluator",
+        "adopter",
+        "developer",
+        "operator",
+        "researcher"
+      ],
+      "journeys": [
+        "understand",
+        "specify",
+        "build-agents",
+        "operate-services"
+      ],
+      "capabilities": [
+        "ecosystem-discovery",
+        "guided-journeys",
+        "public-boundaries"
+      ],
+      "sections": [
+        {
+          "label": "Start here",
+          "url": "https://beyond10x.github.io/getting-started/",
+          "kind": "docs"
+        },
+        {
+          "label": "Ecosystem",
+          "url": "https://beyond10x.github.io/getting-started/ecosystem",
+          "kind": "reference"
+        },
+        {
+          "label": "Updates",
+          "url": "https://beyond10x.github.io/getting-started/updates",
+          "kind": "feed"
+        },
+        {
+          "label": "Source",
+          "url": "https://github.com/beyond10x/getting-started",
+          "kind": "source"
+        }
+      ],
+      "relationships": [
+        {
+          "target": "agentic-principles/docs",
+          "kind": "uses",
+          "label": "Begin with evidence"
+        },
+        {
+          "target": "entity-runtime/docs",
+          "kind": "uses",
+          "label": "Model decisions as data"
+        },
+        {
+          "target": "engineering-protocols/docs",
+          "kind": "uses",
+          "label": "Govern engineering work"
+        },
+        {
+          "target": "metaharness/docs",
+          "kind": "uses",
+          "label": "Compare harnesses"
+        },
+        {
+          "target": "harness/docs",
+          "kind": "uses",
+          "label": "Run an agent loop"
+        },
+        {
+          "target": "substrate/docs",
+          "kind": "uses",
+          "label": "Confine execution"
+        },
+        {
+          "target": "aep-service/docs",
+          "kind": "uses",
+          "label": "Operate protocol state"
+        }
+      ],
+      "accent": "#59d89d",
+      "mark": "website/static/img/mark.svg",
+      "shell": {
+        "integration": "docusaurus",
+        "revision": "6323bfdaf73609247e8dabcc9df410ab280a1960"
+      },
+      "key": "getting-started/docs",
+      "repository": {
+        "id": "getting-started",
+        "url": "https://github.com/beyond10x/getting-started"
+      }
+    },
+    {
+      "id": "docs",
+      "name": "Harness",
+      "summary": "A provider-neutral agent loop with explicit tools, effects, approvals, budgets, and durable session evidence.",
+      "kind": "documentation",
+      "canonicalUrl": "https://beyond10x.github.io/harness/",
+      "maturity": "development",
+      "availability": "published",
+      "discoverability": "public",
+      "audiences": [
+        "adopter",
+        "developer",
+        "operator"
+      ],
+      "journeys": [
+        "build-agents",
+        "operate-services"
+      ],
+      "capabilities": [
+        "agent-loop",
+        "tool-approvals",
+        "workflows",
+        "session-evidence"
+      ],
+      "sections": [
+        {
+          "label": "Getting started",
+          "url": "https://beyond10x.github.io/harness/docs/getting-started",
+          "kind": "quickstart"
+        },
+        {
+          "label": "Agent loop",
+          "url": "https://beyond10x.github.io/harness/docs/concepts/agent-loop",
+          "kind": "docs"
+        },
+        {
+          "label": "CLI",
+          "url": "https://beyond10x.github.io/harness/docs/reference/cli",
+          "kind": "reference"
+        },
+        {
+          "label": "Status",
+          "url": "https://beyond10x.github.io/harness/docs/status",
+          "kind": "status"
+        },
+        {
+          "label": "Source",
+          "url": "https://github.com/beyond10x/harness",
+          "kind": "source"
+        }
+      ],
+      "relationships": [
+        {
+          "target": "substrate/docs",
+          "kind": "executes-in"
+        }
+      ],
+      "accent": "#b9f46a",
+      "mark": "website/static/img/mark.svg",
+      "shell": {
+        "integration": "docusaurus",
+        "revision": "6323bfdaf73609247e8dabcc9df410ab280a1960"
+      },
+      "key": "harness/docs",
+      "repository": {
+        "id": "harness",
+        "url": "https://github.com/beyond10x/harness"
+      }
+    },
+    {
+      "id": "docs",
+      "name": "Metaharness",
+      "summary": "Drive and compare multiple agent harnesses through one observable, steerable, hermetic interface.",
+      "kind": "documentation",
+      "canonicalUrl": "https://beyond10x.github.io/metaharness/",
+      "maturity": "experimental",
+      "availability": "published",
+      "discoverability": "public",
+      "audiences": [
+        "evaluator",
+        "developer",
+        "researcher"
+      ],
+      "journeys": [
+        "understand",
+        "build-agents"
+      ],
+      "capabilities": [
+        "harness-comparison",
+        "hermetic-runs",
+        "steering-protocol"
+      ],
+      "sections": [
+        {
+          "label": "Quickstart",
+          "url": "https://beyond10x.github.io/metaharness/docs/quickstart",
+          "kind": "quickstart"
+        },
+        {
+          "label": "Protocol",
+          "url": "https://beyond10x.github.io/metaharness/docs/protocol/events",
+          "kind": "reference"
+        },
+        {
+          "label": "Status",
+          "url": "https://beyond10x.github.io/metaharness/docs/status",
+          "kind": "status"
+        },
+        {
+          "label": "Source",
+          "url": "https://github.com/beyond10x/metaharness",
+          "kind": "source"
+        }
+      ],
+      "relationships": [
+        {
+          "target": "harness/docs",
+          "kind": "drives"
+        }
+      ],
+      "accent": "#4dc4e6",
+      "mark": "website/static/img/logo.svg",
+      "shell": {
+        "integration": "docusaurus",
+        "revision": "6323bfdaf73609247e8dabcc9df410ab280a1960"
+      },
+      "key": "metaharness/docs",
+      "repository": {
+        "id": "metaharness",
+        "url": "https://github.com/beyond10x/metaharness"
+      }
+    },
+    {
+      "id": "docs",
+      "name": "Substrate",
+      "summary": "Confined execution with explicit capabilities, durable operations, and observed outcomes.",
+      "kind": "documentation",
+      "canonicalUrl": "https://beyond10x.github.io/substrate/",
+      "maturity": "development",
+      "availability": "published",
+      "discoverability": "public",
+      "audiences": [
+        "adopter",
+        "developer",
+        "operator"
+      ],
+      "journeys": [
+        "build-agents",
+        "operate-services"
+      ],
+      "capabilities": [
+        "confined-execution",
+        "operation-ledger",
+        "execution-contract"
+      ],
+      "sections": [
+        {
+          "label": "Getting started",
+          "url": "https://beyond10x.github.io/substrate/docs/getting-started",
+          "kind": "quickstart"
+        },
+        {
+          "label": "Boundary",
+          "url": "https://beyond10x.github.io/substrate/docs/concepts/boundary",
+          "kind": "docs"
+        },
+        {
+          "label": "Contract",
+          "url": "https://beyond10x.github.io/substrate/docs/reference/contract",
+          "kind": "reference"
+        },
+        {
+          "label": "Status",
+          "url": "https://beyond10x.github.io/substrate/docs/status",
+          "kind": "status"
+        },
+        {
+          "label": "Source",
+          "url": "https://github.com/beyond10x/substrate",
+          "kind": "source"
+        }
+      ],
+      "accent": "#72b7ff",
+      "mark": "website/static/img/mark.svg",
+      "shell": {
+        "integration": "docusaurus",
+        "revision": "6323bfdaf73609247e8dabcc9df410ab280a1960"
+      },
+      "key": "substrate/docs",
+      "repository": {
+        "id": "substrate",
+        "url": "https://github.com/beyond10x/substrate"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+schema: b10x-docs/v1
+repository:
+  id: getting-started
+  url: https://github.com/beyond10x/getting-started
+surfaces:
+  - id: docs
+    name: beyond10x — Start here
+    summary: Choose a journey through the public beyond10x research, specifications, runtimes, harnesses, and services.
+    kind: front-door
+    canonicalUrl: https://beyond10x.github.io/getting-started/
+    maturity: development
+    availability: published
+    discoverability: public
+    audiences: [evaluator, adopter, developer, operator, researcher]
+    journeys: [understand, specify, build-agents, operate-services]
+    capabilities: [ecosystem-discovery, guided-journeys, public-boundaries]
+    sections:
+      - {label: Start here, url: https://beyond10x.github.io/getting-started/, kind: docs}
+      - {label: Ecosystem, url: https://beyond10x.github.io/getting-started/ecosystem, kind: reference}
+      - {label: Updates, url: https://beyond10x.github.io/getting-started/updates, kind: feed}
+      - {label: Source, url: https://github.com/beyond10x/getting-started, kind: source}
+    relationships:
+      - {target: agentic-principles/docs, kind: uses, label: Begin with evidence}
+      - {target: entity-runtime/docs, kind: uses, label: Model decisions as data}
+      - {target: engineering-protocols/docs, kind: uses, label: Govern engineering work}
+      - {target: metaharness/docs, kind: uses, label: Compare harnesses}
+      - {target: harness/docs, kind: uses, label: Run an agent loop}
+      - {target: substrate/docs, kind: uses, label: Confine execution}
+      - {target: aep-service/docs, kind: uses, label: Operate protocol state}
+    accent: "#59d89d"
+    mark: website/static/img/mark.svg
+    shell: {integration: docusaurus, revision: 6323bfdaf73609247e8dabcc9df410ab280a1960}

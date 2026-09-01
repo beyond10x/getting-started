@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import docsSystemPlugin from '@beyond10x/docs-system/docusaurus';
 
 const config: Config = {
   title: 'beyond10x — Start here',
@@ -29,6 +30,8 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  plugins: [docsSystemPlugin],
 
   presets: [
     [
@@ -64,6 +67,8 @@ const config: Config = {
         src: 'img/mark.svg',
       },
       items: [
+        {to: '/ecosystem', label: 'Ecosystem', position: 'left'},
+        {to: '/updates', label: 'Updates', position: 'left'},
         {to: '/#engineering-principles', label: 'Principles', position: 'left'},
         {to: '/#entity-runtime', label: 'Entity runtime', position: 'left'},
         {to: '/#engineering-protocols', label: 'Protocols', position: 'left'},
@@ -115,7 +120,7 @@ const config: Config = {
         {
           title: 'Map',
           items: [
-            {label: 'beyond10x Atlas', href: 'https://github.com/beyond10x/atlas'},
+            {label: 'Public ecosystem', to: '/ecosystem'},
             {label: 'Current boundaries', to: '/#boundaries'},
           ],
         },
