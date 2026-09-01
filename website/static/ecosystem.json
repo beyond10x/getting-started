@@ -54,7 +54,7 @@
       ],
       "relationships": [
         {
-          "target": "engineering-protocols/docs",
+          "target": "aep/docs",
           "kind": "implements"
         },
         {
@@ -72,6 +72,83 @@
       "repository": {
         "id": "aep-service",
         "url": "https://github.com/beyond10x/aep-service"
+      }
+    },
+    {
+      "id": "docs",
+      "name": "AEP",
+      "summary": "Typed, portable, machine-executable specifications for performing and proving autonomous engineering work.",
+      "kind": "documentation",
+      "canonicalUrl": "https://beyond10x.github.io/aep/",
+      "maturity": "development",
+      "availability": "published",
+      "discoverability": "public",
+      "audiences": [
+        "adopter",
+        "developer",
+        "operator"
+      ],
+      "journeys": [
+        "specify",
+        "build-agents",
+        "operate-services"
+      ],
+      "capabilities": [
+        "aep",
+        "engineering-workflows",
+        "evidence-gates",
+        "contract-generation"
+      ],
+      "sections": [
+        {
+          "label": "Getting started",
+          "url": "https://beyond10x.github.io/aep/docs/getting-started",
+          "kind": "quickstart"
+        },
+        {
+          "label": "Concepts",
+          "url": "https://beyond10x.github.io/aep/docs/concepts/overview",
+          "kind": "docs"
+        },
+        {
+          "label": "CLI",
+          "url": "https://beyond10x.github.io/aep/docs/reference/cli",
+          "kind": "reference"
+        },
+        {
+          "label": "Status",
+          "url": "https://beyond10x.github.io/aep/docs/status/where-this-stands",
+          "kind": "status"
+        },
+        {
+          "label": "Source",
+          "url": "https://github.com/beyond10x/aep",
+          "kind": "source"
+        }
+      ],
+      "relationships": [
+        {
+          "target": "aep-service/docs",
+          "kind": "specifies"
+        }
+      ],
+      "feeds": [
+        {
+          "label": "Release notes RSS",
+          "url": "https://beyond10x.github.io/aep/releases/rss.xml",
+          "kind": "feed"
+        }
+      ],
+      "accent": "#a5d6ff",
+      "mark": "website/static/img/mark.svg",
+      "shell": {
+        "integration": "docusaurus",
+        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
+      },
+      "key": "aep/docs",
+      "repository": {
+        "id": "aep",
+        "url": "https://github.com/beyond10x/aep"
       }
     },
     {
@@ -121,7 +198,7 @@
       ],
       "relationships": [
         {
-          "target": "engineering-protocols/docs",
+          "target": "aep/docs",
           "kind": "informs"
         },
         {
@@ -150,83 +227,6 @@
       "repository": {
         "id": "agentic-principles",
         "url": "https://github.com/beyond10x/agentic-principles"
-      }
-    },
-    {
-      "id": "docs",
-      "name": "Engineering Protocols",
-      "summary": "Typed, portable, machine-executable specifications for performing and proving autonomous engineering work.",
-      "kind": "documentation",
-      "canonicalUrl": "https://beyond10x.github.io/engineering-protocols/",
-      "maturity": "development",
-      "availability": "published",
-      "discoverability": "public",
-      "audiences": [
-        "adopter",
-        "developer",
-        "operator"
-      ],
-      "journeys": [
-        "specify",
-        "build-agents",
-        "operate-services"
-      ],
-      "capabilities": [
-        "aep",
-        "engineering-workflows",
-        "evidence-gates",
-        "contract-generation"
-      ],
-      "sections": [
-        {
-          "label": "Getting started",
-          "url": "https://beyond10x.github.io/engineering-protocols/docs/getting-started",
-          "kind": "quickstart"
-        },
-        {
-          "label": "Concepts",
-          "url": "https://beyond10x.github.io/engineering-protocols/docs/concepts/overview",
-          "kind": "docs"
-        },
-        {
-          "label": "CLI",
-          "url": "https://beyond10x.github.io/engineering-protocols/docs/reference/cli",
-          "kind": "reference"
-        },
-        {
-          "label": "Status",
-          "url": "https://beyond10x.github.io/engineering-protocols/docs/status/where-this-stands",
-          "kind": "status"
-        },
-        {
-          "label": "Source",
-          "url": "https://github.com/beyond10x/engineering-protocols",
-          "kind": "source"
-        }
-      ],
-      "relationships": [
-        {
-          "target": "aep-service/docs",
-          "kind": "specifies"
-        }
-      ],
-      "feeds": [
-        {
-          "label": "Release notes RSS",
-          "url": "https://beyond10x.github.io/engineering-protocols/releases/rss.xml",
-          "kind": "feed"
-        }
-      ],
-      "accent": "#a5d6ff",
-      "mark": "website/static/img/mark.svg",
-      "shell": {
-        "integration": "docusaurus",
-        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
-      },
-      "key": "engineering-protocols/docs",
-      "repository": {
-        "id": "engineering-protocols",
-        "url": "https://github.com/beyond10x/engineering-protocols"
       }
     },
     {
@@ -295,6 +295,75 @@
     },
     {
       "id": "docs",
+      "name": "ESS",
+      "summary": "Executable system specifications, deterministic intermediate representations, generated contracts, and conformance.",
+      "kind": "documentation",
+      "canonicalUrl": "https://beyond10x.github.io/ess/",
+      "maturity": "experimental",
+      "availability": "published",
+      "discoverability": "public",
+      "audiences": [
+        "adopter",
+        "developer",
+        "operator"
+      ],
+      "journeys": [
+        "specify",
+        "operate-services"
+      ],
+      "capabilities": [
+        "system-specification",
+        "contract-generation",
+        "conformance"
+      ],
+      "sections": [
+        {
+          "label": "Getting started",
+          "url": "https://beyond10x.github.io/ess/docs/getting-started",
+          "kind": "quickstart"
+        },
+        {
+          "label": "Concepts",
+          "url": "https://beyond10x.github.io/ess/docs/concepts/overview",
+          "kind": "docs"
+        },
+        {
+          "label": "CLI",
+          "url": "https://beyond10x.github.io/ess/docs/reference/cli",
+          "kind": "reference"
+        },
+        {
+          "label": "Status",
+          "url": "https://beyond10x.github.io/ess/docs/status/where-this-stands",
+          "kind": "status"
+        },
+        {
+          "label": "Source",
+          "url": "https://github.com/beyond10x/ess",
+          "kind": "source"
+        }
+      ],
+      "feeds": [
+        {
+          "label": "Release notes RSS",
+          "url": "https://beyond10x.github.io/ess/releases/rss.xml",
+          "kind": "feed"
+        }
+      ],
+      "accent": "#ff9070",
+      "mark": "website/static/img/mark.svg",
+      "shell": {
+        "integration": "docusaurus",
+        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
+      },
+      "key": "ess/docs",
+      "repository": {
+        "id": "ess",
+        "url": "https://github.com/beyond10x/ess"
+      }
+    },
+    {
+      "id": "docs",
       "name": "beyond10x — Start here",
       "summary": "Choose a journey through the public beyond10x research, specifications, runtimes, harnesses, and services.",
       "kind": "front-door",
@@ -354,9 +423,14 @@
           "label": "Model decisions as data"
         },
         {
-          "target": "engineering-protocols/docs",
+          "target": "aep/docs",
           "kind": "uses",
           "label": "Govern engineering work"
+        },
+        {
+          "target": "ess/docs",
+          "kind": "uses",
+          "label": "Specify the system"
         },
         {
           "target": "metaharness/docs",

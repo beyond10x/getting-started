@@ -22,7 +22,8 @@ surfaces:
     relationships:
       - {target: agentic-principles/docs, kind: uses, label: Begin with evidence}
       - {target: entity-runtime/docs, kind: uses, label: Model decisions as data}
-      - {target: engineering-protocols/docs, kind: uses, label: Govern engineering work}
+      - {target: aep/docs, kind: uses, label: Govern engineering work}
+      - {target: ess/docs, kind: uses, label: Specify the system}
       - {target: metaharness/docs, kind: uses, label: Compare harnesses}
       - {target: harness/docs, kind: uses, label: Run an agent loop}
       - {target: substrate/docs, kind: uses, label: Confine execution}

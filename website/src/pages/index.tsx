@@ -24,10 +24,10 @@ const readingPath = [
   },
   {
     number: '03',
-    name: 'Engineering Protocols',
-    question: 'Does the evidence permit the work?',
-    answer: 'Executable method',
-    target: '#engineering-protocols',
+    name: 'AEP + ESS',
+    question: 'Was the work governed, and is the result conformant?',
+    answer: 'Executable specifications',
+    target: '#aep-and-ess',
     stackClass: 'stackProtocols',
   },
   {
@@ -82,7 +82,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="From evidence-backed principles to governed action"
-      description="Start here with beyond10x: Engineering Principles, entity-runtime, engineering-protocols and connectors explained from the bottom up, with their current boundaries made explicit.">
+      description="Start here with beyond10x: Engineering Principles, Entity Runtime, AEP, ESS, and Connectors explained from the bottom up, with their current boundaries made explicit.">
       <main>
         <header className={styles.hero}>
           <div className={styles.heroGrid} aria-hidden="true" />
@@ -99,8 +99,8 @@ export default function Home(): ReactNode {
               </Heading>
               <p className={styles.lede}>
                 Autonomous systems become dependable when their important decisions stop hiding
-                in prompts and glue code. Read four projects from the bottom up: evidence-backed
-                principles, deterministic state, executable engineering method, then governed reach.
+                in prompts and glue code. Read four ideas from the bottom up: evidence-backed
+                principles, deterministic state, executable specifications, then governed reach.
               </p>
               <div className={styles.actions}>
                 <a className={styles.primaryAction} href="#engineering-principles">
@@ -259,18 +259,19 @@ export default function Home(): ReactNode {
                 <span>03 / METHOD</span>
                 <Status>PUBLIC · AVAILABLE</Status>
               </div>
-              <p className={styles.sectionLabel}>ENGINEERING PROTOCOLS</p>
-              <Heading as="h2" id="engineering-protocols">“Built properly” becomes a testable claim.</Heading>
+              <p className={styles.sectionLabel}>AEP + ESS</p>
+              <Heading as="h2" id="aep-and-ess">The work and its result become separate, testable claims.</Heading>
               <p className={styles.layerLede}>
                 Prompts can ask an agent to test first, protect an API or wait for approval. They
-                cannot prove any of it happened. Engineering Protocols expresses the method as
-                typed documents and evaluates the evidence independently of the model’s story.
+                cannot prove any of it happened—or that the result matches the intended system.
+                AEP governs the engineering work; ESS specifies and checks the system. Each keeps
+                its own model and command.
               </p>
               <div className={styles.protocolPair}>
                 <article>
                   <span>AEP</span>
                   <Heading as="h3">Was this built properly?</Heading>
-                  <p>Principles, workflows, capabilities, approvals and completion predicates.</p>
+                  <p>Typed workflows, capabilities, approvals, evidence, and completion predicates.</p>
                 </article>
                 <div className={styles.seam} aria-label="The two specifications meet at evidence">
                   <span>EVIDENCE</span>
@@ -279,36 +280,40 @@ export default function Home(): ReactNode {
                 <article>
                   <span>ESS</span>
                   <Heading as="h3">Is this what we meant to build?</Heading>
-                  <p>Executable system specifications, generated contracts and conformance.</p>
+                  <p>Validated system models, deterministic artifacts, generated contracts, and conformance.</p>
                 </article>
               </div>
               <p className={styles.keyPoint}>
-                The model still reasons. The protocol decides what the resulting facts permit.
+                The model still reasons. AEP decides what the work's evidence permits; ESS decides
+                whether the implementation conforms to declared system intent.
               </p>
               <p className={styles.statusNote}>
                 <strong>AEP Service</strong> is the public developer-preview deployment surface: a
                 multi-tenant HTTP service for central protocol entities, activity and projections.
-                It consumes the public contracts of Engineering Protocols and Entity Runtime; it
-                does not turn the two libraries into a dependency stack.
+                It hosts AEP contracts over Entity Runtime. ESS remains standalone; only its closed
+                conformance report crosses an optional AEP-side evidence adapter.
               </p>
               <div className={styles.inlineActions}>
-                <Link className={styles.textAction} href="https://beyond10x.github.io/engineering-protocols/">
-                  Explore the protocols <span aria-hidden="true">↗</span>
+                <Link className={styles.textAction} href="https://beyond10x.github.io/aep/">
+                  Explore AEP <span aria-hidden="true">↗</span>
+                </Link>
+                <Link className={styles.textAction} href="https://beyond10x.github.io/ess/">
+                  Explore ESS <span aria-hidden="true">↗</span>
                 </Link>
                 <Link className={styles.textAction} href="https://beyond10x.github.io/aep-service/">
                   Try AEP Service <span aria-hidden="true">↗</span>
                 </Link>
-                <Link className={styles.mutedAction} href="https://github.com/beyond10x/engineering-protocols">
-                  Source on GitHub
+                <Link className={styles.mutedAction} to="/ecosystem">
+                  Compare public surfaces
                 </Link>
               </div>
             </div>
             <aside className={`${styles.codePanel} ${styles.explainPanel}`} aria-label="A protocol refusal">
               <div className={styles.panelBar}>
-                <span>protocol explain</span>
+                <span>aep explain</span>
                 <Status tone="proposal">EVIDENCE GATE</Status>
               </div>
-              <pre><code>{`$ protocol explain \\
+              <pre><code>{`$ aep explain \\
   --task task.yaml \\
   --action production.write
 
@@ -374,7 +379,7 @@ production.write denied
             <div className={styles.boundaryHead}>
               <div>
                 <p className={styles.sectionLabel}>CURRENT BOUNDARIES</p>
-                <Heading as="h2" id="boundaries">A reading stack. Not yet a dependency stack.</Heading>
+                <Heading as="h2" id="boundaries">A reading stack, with explicit seams.</Heading>
               </div>
               <p>
                 The progression is useful because it separates concerns. Its value does not depend
@@ -384,10 +389,10 @@ production.write denied
             <div className={styles.boundaryGrid}>
               <article>
                 <span>INFORMS</span>
-                <Heading as="h3">Principles → protocols</Heading>
+                <Heading as="h3">Principles → AEP</Heading>
                 <p>
                   The research repository supplies evidence-backed principles and explicit product
-                  handoffs. Engineering Protocols is one place those ideas can become executable;
+                  handoffs. AEP is one place those ideas can become executable;
                   research maturity and implementation status remain separate claims.
                 </p>
                 <Link href="https://beyond10x.github.io/agentic-principles/">
@@ -395,20 +400,30 @@ production.write denied
                 </Link>
               </article>
               <article>
-                <span>PROPOSED</span>
-                <Heading as="h3">Runtime → protocols</Heading>
+                <span>PINNED DEPENDENCY</span>
+                <Heading as="h3">AEP → Entity Runtime</Heading>
                 <p>
-                  <code>entity-runtime</code> is the intended engine for the Engineering Protocols artifact
-                  model. The adoption design is phased and still proposed; neither repository has
-                  taken a Cargo dependency on the other.
+                  AEP uses one pinned Entity Runtime release for its IO-free entity kernel and
+                  providers. Entity Runtime does not depend on AEP.
                 </p>
-                <Link href="https://beyond10x.github.io/entity-runtime/docs/design/engineering-protocols-adoption-v0.1">
-                  Read the adoption design ↗
+                <Link href="https://beyond10x.github.io/entity-runtime/">
+                  Explore Entity Runtime ↗
+                </Link>
+              </article>
+              <article>
+                <span>DECLARED REPORT BOUNDARY</span>
+                <Heading as="h3">ESS → optional AEP evidence</Heading>
+                <p>
+                  ESS emits a standalone closed conformance report. An optional AEP adapter can
+                  translate it into evidence without either core model depending on the other.
+                </p>
+                <Link href="https://beyond10x.github.io/ess/">
+                  Explore ESS ↗
                 </Link>
               </article>
               <article>
                 <span>PUBLIC PREVIEW</span>
-                <Heading as="h3">Runtime + protocols → service</Heading>
+                <Heading as="h3">Runtime + AEP → service</Heading>
                 <p>
                   <code>aep-service</code> combines the published protocol contracts and runtime
                   store interface behind a multi-tenant REST API. The service, generated OpenAPI
@@ -421,20 +436,11 @@ production.write denied
               </article>
               <article>
                 <span>SEPARATE TODAY</span>
-                <Heading as="h3">Protocols ↛ connectors</Heading>
+                <Heading as="h3">AEP and ESS ↛ connectors</Heading>
                 <p>
                   Connectors has its own domain and authority model. It does not currently consume
-                  Engineering Protocols or Entity Runtime. Here it is the next idea in the reading
-                  path: governed work eventually needs governed reach.
-                </p>
-              </article>
-              <article>
-                <span>STABLE IDEA</span>
-                <Heading as="h3">The shared shape</Heading>
-                <p>
-                  Declare the rules, evaluate them at a narrow seam, return an inspectable decision,
-                  and keep ambient authority outside the deciding core. Each project applies that
-                  shape at a different scale.
+                  AEP, ESS, or Entity Runtime. Here it is the next idea in the reading path: governed
+                  work eventually needs governed reach.
                 </p>
               </article>
             </div>
@@ -454,8 +460,11 @@ production.write denied
               <Link href="https://beyond10x.github.io/entity-runtime/">
                 <span>My lifecycle is hidden in code</span><strong>Start with Entity Runtime ↗</strong>
               </Link>
-              <Link href="https://beyond10x.github.io/engineering-protocols/">
-                <span>My engineering rules live in prompts</span><strong>Start with Protocols ↗</strong>
+              <Link href="https://beyond10x.github.io/aep/">
+                <span>My engineering rules live in prompts</span><strong>Start with AEP ↗</strong>
+              </Link>
+              <Link href="https://beyond10x.github.io/ess/">
+                <span>My system intent is prose</span><strong>Start with ESS ↗</strong>
               </Link>
               <Link href="https://beyond10x.github.io/aep-service/">
                 <span>My protocol data needs one shared service</span><strong>Try AEP Service ↗</strong>

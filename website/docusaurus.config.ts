@@ -52,7 +52,7 @@ const config: Config = {
       {
         name: 'keywords',
         content:
-          'beyond10x, engineering principles, agentic principles, entity runtime, engineering protocols, governed connectors, autonomous engineering, deterministic systems',
+          'beyond10x, engineering principles, agentic principles, entity runtime, AEP, agentic engineering protocol, ESS, executable system specification, governed connectors, autonomous engineering, deterministic systems',
       },
     ],
     colorMode: {
@@ -71,7 +71,7 @@ const config: Config = {
         {to: '/updates', label: 'Updates', position: 'left'},
         {to: '/#engineering-principles', label: 'Principles', position: 'left'},
         {to: '/#entity-runtime', label: 'Entity runtime', position: 'left'},
-        {to: '/#engineering-protocols', label: 'Protocols', position: 'left'},
+        {to: '/#aep-and-ess', label: 'AEP + ESS', position: 'left'},
         {href: 'https://beyond10x.github.io/aep-service/', label: 'AEP Service', position: 'left'},
         {to: '/#connectors', label: 'Connectors', position: 'left'},
         {to: '/#boundaries', label: 'Boundaries', position: 'left'},
@@ -94,9 +94,10 @@ const config: Config = {
             },
             {label: 'Entity Runtime', href: 'https://beyond10x.github.io/entity-runtime/'},
             {
-              label: 'Engineering Protocols',
-              href: 'https://beyond10x.github.io/engineering-protocols/',
+              label: 'AEP',
+              href: 'https://beyond10x.github.io/aep/',
             },
+            {label: 'ESS', href: 'https://beyond10x.github.io/ess/'},
             {label: 'AEP Service', href: 'https://beyond10x.github.io/aep-service/'},
             {label: 'Connectors overview', to: '/#connectors'},
           ],
@@ -111,9 +112,10 @@ const config: Config = {
             },
             {label: 'Entity Runtime', href: 'https://github.com/beyond10x/entity-runtime'},
             {
-              label: 'Engineering Protocols',
-              href: 'https://github.com/beyond10x/engineering-protocols',
+              label: 'AEP',
+              href: 'https://github.com/beyond10x/aep',
             },
+            {label: 'ESS', href: 'https://github.com/beyond10x/ess'},
             {label: 'AEP Service', href: 'https://github.com/beyond10x/aep-service'},
           ],
         },
