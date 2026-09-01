@@ -66,7 +66,7 @@
       "mark": "website/static/img/mark.svg",
       "shell": {
         "integration": "docusaurus",
-        "revision": "6323bfdaf73609247e8dabcc9df410ab280a1960"
+        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
       },
       "key": "aep-service/docs",
       "repository": {
@@ -144,7 +144,7 @@
       "mark": "website/static/img/mark.svg",
       "shell": {
         "integration": "docusaurus",
-        "revision": "6323bfdaf73609247e8dabcc9df410ab280a1960"
+        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
       },
       "key": "agentic-principles/docs",
       "repository": {
@@ -221,7 +221,7 @@
       "mark": "website/static/img/mark.svg",
       "shell": {
         "integration": "docusaurus",
-        "revision": "6323bfdaf73609247e8dabcc9df410ab280a1960"
+        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
       },
       "key": "engineering-protocols/docs",
       "repository": {
@@ -285,7 +285,7 @@
       "mark": "website/static/img/mark.svg",
       "shell": {
         "integration": "docusaurus",
-        "revision": "6323bfdaf73609247e8dabcc9df410ab280a1960"
+        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
       },
       "key": "entity-runtime/docs",
       "repository": {
@@ -383,7 +383,7 @@
       "mark": "website/static/img/mark.svg",
       "shell": {
         "integration": "docusaurus",
-        "revision": "6323bfdaf73609247e8dabcc9df410ab280a1960"
+        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
       },
       "key": "getting-started/docs",
       "repository": {
@@ -452,7 +452,7 @@
       "mark": "website/static/img/mark.svg",
       "shell": {
         "integration": "docusaurus",
-        "revision": "6323bfdaf73609247e8dabcc9df410ab280a1960"
+        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
       },
       "key": "harness/docs",
       "repository": {
@@ -515,7 +515,7 @@
       "mark": "website/static/img/logo.svg",
       "shell": {
         "integration": "docusaurus",
-        "revision": "6323bfdaf73609247e8dabcc9df410ab280a1960"
+        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
       },
       "key": "metaharness/docs",
       "repository": {
@@ -577,7 +577,7 @@
       "mark": "website/static/img/mark.svg",
       "shell": {
         "integration": "docusaurus",
-        "revision": "6323bfdaf73609247e8dabcc9df410ab280a1960"
+        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
       },
       "key": "substrate/docs",
       "repository": {
