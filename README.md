@@ -21,6 +21,12 @@ entities while Entity Runtime supplies the store abstraction. ESS remains standa
 the AEP boundary only through its closed conformance report and an optional AEP-side evidence
 adapter.
 
+Agent execution has two distinct public surfaces: [Harness](https://beyond10x.github.io/harness/)
+owns the provider-neutral loop, while
+[Metaharness](https://beyond10x.github.io/metaharness/) drives harnesses from outside for
+observation, steering, isolation, and comparison. The landing page lists both from their
+repository-owned discovery manifests.
+
 This is a reading order, not one dependency stack. The site names the current boundaries and
 maturity of each component plainly.
 

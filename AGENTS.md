@@ -20,8 +20,10 @@ A change here that moves none of these is a question for the operator, not a tas
 
 `website/` is the public front door. It explains four ideas from the bottom up: Engineering
 Principles (the public name used here for the `agentic-principles` research repository),
-`entity-runtime`, the sibling AEP and ESS specifications, then `connectors`. It is an orientation
-layer, not a new authority for their research, APIs or designs.
+`entity-runtime`, the sibling AEP and ESS specifications, then `connectors`. Its execution section
+lists Harness and Metaharness from their owned manifests so the agent loop and the outside
+observation/comparison surface remain distinct. It is an orientation layer, not a new authority for
+their research, APIs or designs.
 
 ## Source of truth
 

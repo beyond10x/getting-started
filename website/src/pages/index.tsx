@@ -2,8 +2,20 @@ import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import {ProjectCard} from '@beyond10x/docs-system/components';
+import type {EcosystemRegistry} from '@beyond10x/docs-system/types';
+import registryDocument from '../../static/ecosystem.json';
 
 import styles from './index.module.css';
+
+const registry = registryDocument as EcosystemRegistry;
+const executionSurfaces = ['harness/docs', 'metaharness/docs'].map((key) => {
+  const surface = registry.surfaces.find((candidate) => candidate.key === key);
+  if (!surface) {
+    throw new Error(`public execution surface ${key} is absent from ecosystem.json`);
+  }
+  return surface;
+});
 
 const readingPath = [
   {
@@ -179,6 +191,27 @@ export default function Home(): ReactNode {
             <Link className={styles.changeLink} to="/changes">
               See what changed across these journeys <span aria-hidden="true">→</span>
             </Link>
+          </div>
+        </section>
+
+        <section className={styles.execution} aria-labelledby="execution-title">
+          <div className="container">
+            <div className={styles.journeyHeading}>
+              <div>
+                <p className={styles.sectionLabel}>RUN AND COMPARE AGENTS</p>
+                <Heading as="h2" id="execution-title">The loop and the outside view.</Heading>
+              </div>
+              <p>
+                Harness owns the provider-neutral agent loop. Metaharness drives harnesses from
+                outside so their runs can be observed, steered, isolated, and compared through one
+                interface.
+              </p>
+            </div>
+            <div className={styles.executionGrid}>
+              {executionSurfaces.map((surface) => (
+                <ProjectCard key={surface.key} surface={surface} />
+              ))}
+            </div>
           </div>
         </section>
 
@@ -402,7 +435,7 @@ production.write denied
             <div className={styles.layerCopy}>
               <div className={styles.layerMeta}>
                 <span>04 / REACH</span>
-                <Status tone="private">PRIVATE · PRE-V1</Status>
+                <Status>PUBLIC · PRE-V1</Status>
               </div>
               <p className={styles.sectionLabel}>CONNECTORS</p>
               <Heading as="h2" id="connectors">An integration is more than an HTTP request.</Heading>
@@ -419,8 +452,8 @@ production.write denied
               </ul>
               <p className={styles.statusNote}>
                 The catalogue family, personal-local runtime and bounded hosted APIs are implemented.
-                The full SaaS and satellite surface is not claimed. The implementation repository is
-                currently private; this page is its public orientation.
+                The full SaaS and satellite surface is not claimed. The public implementation
+                repository owns the detailed architecture, guides, and current maturity statement.
               </p>
             </div>
             <aside className={styles.flowPanel} aria-label="The connector invocation flow">

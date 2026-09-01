@@ -266,6 +266,7 @@
 }
 
 .journeys,
+.execution,
 .premise,
 .boundaries,
 .nextStep {
@@ -275,6 +276,18 @@
 .journeys {
   border-bottom: 1px solid var(--ifm-color-emphasis-300);
   background: var(--ifm-background-surface-color);
+}
+
+.execution {
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+}
+
+.executionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
 }
 
 .journeyHeading {
@@ -1225,6 +1238,10 @@
   }
 
   .journeyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .executionGrid {
     grid-template-columns: 1fr;
   }
 
