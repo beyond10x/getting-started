@@ -48,6 +48,44 @@ const connectorFlow = [
   ['event', 'Deliver what happened'],
 ];
 
+const outcomeJourneys = [
+  {
+    label: 'Understand',
+    title: 'Choose a rule the evidence supports',
+    outcome: 'Inspect one principle, its maturity, counterevidence, and underlying study.',
+    time: 'about 8 min',
+    href: 'https://beyond10x.github.io/agentic-principles/principles',
+  },
+  {
+    label: 'Plan work',
+    title: 'Turn engineering intent into governed work',
+    outcome: 'Install focused guidance, then create a typed planning artifact through AEP.',
+    time: 'about 12 min',
+    href: 'https://beyond10x.github.io/aep/docs/getting-started',
+  },
+  {
+    label: 'Specify',
+    title: 'Make system intent executable',
+    outcome: 'Validate an ESS model and generate deterministic contract artifacts.',
+    time: 'about 12 min',
+    href: 'https://beyond10x.github.io/ess/docs/getting-started',
+  },
+  {
+    label: 'Build agents',
+    title: 'Run an explicit, evidenced agent loop',
+    outcome: 'Complete a read-only Harness run and retain its session evidence.',
+    time: 'about 12 min',
+    href: 'https://beyond10x.github.io/harness/docs/getting-started',
+  },
+  {
+    label: 'Operate services',
+    title: 'Exercise the governed service boundary',
+    outcome: 'Submit an authenticated AEP command and inspect its state and evidence.',
+    time: 'about 15 min',
+    href: 'https://beyond10x.github.io/aep-service/docs/quickstart',
+  },
+];
+
 function Status({children, tone = 'live'}: {children: ReactNode; tone?: 'live' | 'proposal' | 'private'}) {
   const toneClass = tone === 'proposal' ? styles.proposal : tone === 'private' ? styles.private : '';
   return <span className={`${styles.status} ${toneClass}`}>{children}</span>;
@@ -114,6 +152,35 @@ export default function Home(): ReactNode {
             <ReadingStack />
           </div>
         </header>
+
+        <section className={styles.journeys} aria-labelledby="journeys-title">
+          <div className="container">
+            <div className={styles.journeyHeading}>
+              <div>
+                <p className={styles.sectionLabel}>CHOOSE AN OUTCOME</p>
+                <Heading as="h2" id="journeys-title">Leave with something verified.</Heading>
+              </div>
+              <p>
+                Start from what you need to accomplish. Each path names the result, the public
+                surface that owns it, and a realistic first-run time.
+              </p>
+            </div>
+            <div className={styles.journeyGrid}>
+              {outcomeJourneys.map((journey) => (
+                <article key={journey.label}>
+                  <span>{journey.label}</span>
+                  <Heading as="h3">{journey.title}</Heading>
+                  <p>{journey.outcome}</p>
+                  <small>{journey.time}</small>
+                  <Link href={journey.href}>Start this journey <span aria-hidden="true">→</span></Link>
+                </article>
+              ))}
+            </div>
+            <Link className={styles.changeLink} to="/changes">
+              See what changed across these journeys <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+        </section>
 
         <section className={styles.premise} aria-labelledby="premise-title">
           <div className="container">

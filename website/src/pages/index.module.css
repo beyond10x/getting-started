@@ -265,10 +265,97 @@
   margin: 0;
 }
 
+.journeys,
 .premise,
 .boundaries,
 .nextStep {
   padding: clamp(5rem, 9vw, 8rem) 0;
+}
+
+.journeys {
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+}
+
+.journeyHeading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
+  gap: clamp(2rem, 7vw, 7rem);
+  align-items: start;
+}
+
+.journeyHeading h2 {
+  margin: 0;
+  max-width: 12ch;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  letter-spacing: -0.05em;
+  line-height: 1.02;
+}
+
+.journeyHeading > p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.journeyGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 3rem;
+  background: var(--ifm-color-emphasis-300);
+}
+
+.journeyGrid article {
+  display: flex;
+  min-height: 20rem;
+  flex-direction: column;
+  padding: 1.5rem;
+  background: var(--ifm-background-color);
+}
+
+.journeyGrid article > span,
+.journeyGrid small {
+  color: var(--ifm-color-primary);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.journeyGrid h3 {
+  margin: 2.2rem 0 0.8rem;
+  font-size: 1.15rem;
+  line-height: 1.25;
+}
+
+.journeyGrid p {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.journeyGrid small {
+  margin-top: auto;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.journeyGrid a,
+.changeLink {
+  margin-top: 1rem;
+  color: var(--ifm-color-primary);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.changeLink {
+  display: inline-block;
+  margin-top: 2rem;
 }
 
 .premise {
@@ -1027,6 +1114,7 @@
 
   .heroInner,
   .layerGrid,
+  .journeyHeading,
   .premiseHead,
   .boundaryHead,
   .nextInner {
@@ -1049,6 +1137,10 @@
   .pathGrid,
   .boundaryGrid {
     grid-template-columns: 1fr;
+  }
+
+  .journeyGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .pathGrid {
@@ -1078,6 +1170,7 @@
 
 @media screen and (max-width: 600px) {
   .hero,
+  .journeys,
   .premise,
   .layerSection,
   .boundaries,
@@ -1110,6 +1203,7 @@
   }
 
   .premiseHead h2,
+  .journeyHeading h2,
   .boundaryHead h2,
   .nextInner h2,
   .layerCopy h2 {
@@ -1128,5 +1222,13 @@
 
   .codePanel pre {
     font-size: 0.65rem;
+  }
+
+  .journeyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .journeyGrid article {
+    min-height: 16rem;
   }
 }

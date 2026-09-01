@@ -26,6 +26,21 @@ maturity of each component plainly.
 
 Published site: <https://beyond10x.github.io/getting-started/>
 
+## Public discovery contract
+
+Each public repository owns a `b10x.docs.yaml` manifest with its audience, journeys, relationships,
+and one concrete adoption outcome. Important cross-repository changes live with the repository
+making the claim under `changes/`; ordinary GitHub releases are added automatically. Atlas invokes
+the exact Git-pinned Docs System CLI to regenerate these committed public derivatives:
+
+- `website/static/ecosystem.json` — discoverable surfaces and adoption actions;
+- `website/static/changes.json` — releases enriched by repository-owned impact records;
+- `website/static/changes/rss.xml` and `feed.json` — subscription formats;
+- `website/static/release-facts.json` — the GitHub release evidence used for the snapshot.
+
+Never edit those derivatives independently. The Atlas `docs snapshot` workflow rebuilds all of
+them together and refuses non-public relationship targets.
+
 ## Develop
 
 ```console

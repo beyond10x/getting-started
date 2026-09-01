@@ -10,6 +10,7 @@ const registry = registryDocument as EcosystemRegistry;
 const journeys: Array<{id: Journey | 'all'; label: string}> = [
   {id: 'all', label: 'Everything public'},
   {id: 'understand', label: 'Understand'},
+  {id: 'plan-work', label: 'Plan work'},
   {id: 'specify', label: 'Specify'},
   {id: 'build-agents', label: 'Build agents'},
   {id: 'operate-services', label: 'Operate services'},

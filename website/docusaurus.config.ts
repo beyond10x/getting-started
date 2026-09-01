@@ -1,7 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-import docsSystemPlugin from '@beyond10x/docs-system/docusaurus';
+import docsSystemPlugin, {ecosystemFooterGroup, ecosystemNavbarItems} from '@beyond10x/docs-system/docusaurus';
 
 const config: Config = {
   title: 'beyond10x — Start here',
@@ -67,8 +67,7 @@ const config: Config = {
         src: 'img/mark.svg',
       },
       items: [
-        {to: '/ecosystem', label: 'Ecosystem', position: 'left'},
-        {to: '/updates', label: 'Updates', position: 'left'},
+        ...ecosystemNavbarItems(),
         {to: '/#engineering-principles', label: 'Principles', position: 'left'},
         {to: '/#entity-runtime', label: 'Entity runtime', position: 'left'},
         {to: '/#aep-and-ess', label: 'AEP + ESS', position: 'left'},
@@ -85,6 +84,7 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
+        ecosystemFooterGroup(),
         {
           title: 'Start at the bottom',
           items: [

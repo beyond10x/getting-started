@@ -1,5 +1,5 @@
 {
-  "schema": "b10x-docs-registry/v1",
+  "schema": "b10x-docs-registry/v2",
   "surfaces": [
     {
       "id": "docs",
@@ -62,11 +62,22 @@
           "kind": "uses"
         }
       ],
+      "adoption": {
+        "label": "Run the developer preview",
+        "url": "https://beyond10x.github.io/aep-service/docs/quickstart",
+        "mode": "source-build",
+        "estimatedMinutes": 15,
+        "prerequisites": [
+          "Rust toolchain",
+          "PostgreSQL"
+        ],
+        "outcome": "Submit an authenticated command and inspect its governed state and evidence."
+      },
       "accent": "#b99cff",
       "mark": "website/static/img/mark.svg",
       "shell": {
         "integration": "docusaurus",
-        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
+        "revision": "73aefe1ca268cc853ed38fb23478454496462a03"
       },
       "key": "aep-service/docs",
       "repository": {
@@ -89,6 +100,7 @@
         "operator"
       ],
       "journeys": [
+        "plan-work",
         "specify",
         "build-agents",
         "operate-services"
@@ -139,11 +151,21 @@
           "kind": "feed"
         }
       ],
+      "adoption": {
+        "label": "Create governed work",
+        "url": "https://beyond10x.github.io/aep/docs/getting-started",
+        "mode": "source-build",
+        "estimatedMinutes": 12,
+        "prerequisites": [
+          "Rust toolchain"
+        ],
+        "outcome": "Create and validate a typed planning artifact through the AEP command."
+      },
       "accent": "#a5d6ff",
       "mark": "website/static/img/mark.svg",
       "shell": {
         "integration": "docusaurus",
-        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
+        "revision": "73aefe1ca268cc853ed38fb23478454496462a03"
       },
       "key": "aep/docs",
       "repository": {
@@ -167,6 +189,7 @@
       ],
       "journeys": [
         "understand",
+        "plan-work",
         "build-agents"
       ],
       "capabilities": [
@@ -217,16 +240,170 @@
           "kind": "feed"
         }
       ],
+      "adoption": {
+        "label": "Read the principle catalog",
+        "url": "https://beyond10x.github.io/agentic-principles/principles",
+        "mode": "browser",
+        "estimatedMinutes": 8,
+        "outcome": "Identify an evidence-backed principle and inspect the evidence behind it."
+      },
       "accent": "#43cdbf",
       "mark": "website/static/img/mark.svg",
       "shell": {
         "integration": "docusaurus",
-        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
+        "revision": "73aefe1ca268cc853ed38fb23478454496462a03"
       },
       "key": "agentic-principles/docs",
       "repository": {
         "id": "agentic-principles",
         "url": "https://github.com/beyond10x/agentic-principles"
+      }
+    },
+    {
+      "id": "docs",
+      "name": "Agent Plugins",
+      "summary": "Navigate and create portable plugins, or install focused AEP planning, ADP delivery, and ESS schema guidance from the curated beyond10x marketplace.",
+      "kind": "documentation",
+      "canonicalUrl": "https://beyond10x.github.io/agentplugins/",
+      "maturity": "development",
+      "availability": "published",
+      "discoverability": "public",
+      "audiences": [
+        "adopter",
+        "developer"
+      ],
+      "journeys": [
+        "plan-work",
+        "build-agents",
+        "specify"
+      ],
+      "capabilities": [
+        "plugin-routing",
+        "plugin-authoring",
+        "governed-planning",
+        "development-waves",
+        "schema-validation"
+      ],
+      "sections": [
+        {
+          "label": "Choose a plugin",
+          "url": "https://beyond10x.github.io/agentplugins/docs/choose-a-plugin",
+          "kind": "guide"
+        },
+        {
+          "label": "Install",
+          "url": "https://beyond10x.github.io/agentplugins/docs/install",
+          "kind": "quickstart"
+        },
+        {
+          "label": "Plugin reference",
+          "url": "https://beyond10x.github.io/agentplugins/docs/plugins/beyond10x",
+          "kind": "reference"
+        },
+        {
+          "label": "Source",
+          "url": "https://github.com/beyond10x/agentplugins",
+          "kind": "source"
+        }
+      ],
+      "relationships": [
+        {
+          "target": "aep-service/docs",
+          "kind": "supports",
+          "label": "Adds governed planning guidance"
+        },
+        {
+          "target": "ess/docs",
+          "kind": "supports",
+          "label": "Adds schema and projection guidance"
+        }
+      ],
+      "adoption": {
+        "label": "Install a focused plugin",
+        "url": "https://beyond10x.github.io/agentplugins/docs/install",
+        "mode": "install",
+        "estimatedMinutes": 5,
+        "prerequisites": [
+          "A supported agent harness"
+        ],
+        "outcome": "Install one scoped guidance plugin without copying its instructions."
+      },
+      "accent": "#d3a6ff",
+      "mark": "website/static/img/mark.svg",
+      "shell": {
+        "integration": "docusaurus",
+        "revision": "73aefe1ca268cc853ed38fb23478454496462a03"
+      },
+      "key": "agentplugins/docs",
+      "repository": {
+        "id": "agentplugins",
+        "url": "https://github.com/beyond10x/agentplugins"
+      }
+    },
+    {
+      "id": "docs",
+      "name": "Docs System",
+      "summary": "Shared documentation contracts, design tokens, React primitives, renderers, and deterministic discovery tooling.",
+      "kind": "reference",
+      "canonicalUrl": "https://github.com/beyond10x/docs-system#readme",
+      "maturity": "development",
+      "availability": "published",
+      "discoverability": "public",
+      "audiences": [
+        "developer"
+      ],
+      "journeys": [
+        "build-agents",
+        "operate-services"
+      ],
+      "capabilities": [
+        "documentation-contracts",
+        "shared-components",
+        "ecosystem-change-feeds"
+      ],
+      "sections": [
+        {
+          "label": "Integration guide",
+          "url": "https://github.com/beyond10x/docs-system#readme",
+          "kind": "guide"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/beyond10x/docs-system/releases",
+          "kind": "feed"
+        },
+        {
+          "label": "Source",
+          "url": "https://github.com/beyond10x/docs-system",
+          "kind": "source"
+        }
+      ],
+      "relationships": [
+        {
+          "target": "getting-started/docs",
+          "kind": "supports",
+          "label": "Generates the public discovery snapshot"
+        }
+      ],
+      "adoption": {
+        "label": "Pin the shared docs package",
+        "url": "https://github.com/beyond10x/docs-system#surface-manifests",
+        "mode": "install",
+        "estimatedMinutes": 5,
+        "prerequisites": [
+          "Node.js"
+        ],
+        "outcome": "Validate one repository manifest and reuse the shared documentation shell."
+      },
+      "accent": "#59d89d",
+      "shell": {
+        "integration": "portable",
+        "revision": "local"
+      },
+      "key": "docs-system/docs",
+      "repository": {
+        "id": "docs-system",
+        "url": "https://github.com/beyond10x/docs-system"
       }
     },
     {
@@ -281,11 +458,21 @@
           "label": "Provides deterministic entity storage semantics"
         }
       ],
+      "adoption": {
+        "label": "Model and execute a refund",
+        "url": "https://beyond10x.github.io/entity-runtime/docs/guide/getting-started",
+        "mode": "source-build",
+        "estimatedMinutes": 10,
+        "prerequisites": [
+          "Rust toolchain"
+        ],
+        "outcome": "Validate an entity definition and observe a deterministic transition decision."
+      },
       "accent": "#f0b35c",
       "mark": "website/static/img/mark.svg",
       "shell": {
         "integration": "docusaurus",
-        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
+        "revision": "73aefe1ca268cc853ed38fb23478454496462a03"
       },
       "key": "entity-runtime/docs",
       "repository": {
@@ -350,11 +537,21 @@
           "kind": "feed"
         }
       ],
+      "adoption": {
+        "label": "Compile a system specification",
+        "url": "https://beyond10x.github.io/ess/docs/getting-started",
+        "mode": "source-build",
+        "estimatedMinutes": 12,
+        "prerequisites": [
+          "Rust toolchain"
+        ],
+        "outcome": "Validate system intent and generate deterministic contract artifacts."
+      },
       "accent": "#ff9070",
       "mark": "website/static/img/mark.svg",
       "shell": {
         "integration": "docusaurus",
-        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
+        "revision": "73aefe1ca268cc853ed38fb23478454496462a03"
       },
       "key": "ess/docs",
       "repository": {
@@ -380,6 +577,7 @@
       ],
       "journeys": [
         "understand",
+        "plan-work",
         "specify",
         "build-agents",
         "operate-services"
@@ -401,8 +599,8 @@
           "kind": "reference"
         },
         {
-          "label": "Updates",
-          "url": "https://beyond10x.github.io/getting-started/updates",
+          "label": "Ecosystem changes",
+          "url": "https://beyond10x.github.io/getting-started/changes",
           "kind": "feed"
         },
         {
@@ -451,13 +649,35 @@
           "target": "aep-service/docs",
           "kind": "uses",
           "label": "Operate protocol state"
+        },
+        {
+          "target": "agentplugins/docs",
+          "kind": "uses",
+          "label": "Add governed agent guidance"
+        },
+        {
+          "target": "worktree/docs",
+          "kind": "uses",
+          "label": "Keep agent checkouts recoverable"
+        },
+        {
+          "target": "docs-system/docs",
+          "kind": "uses",
+          "label": "Share the public documentation contract"
         }
       ],
+      "adoption": {
+        "label": "Choose a journey",
+        "url": "https://beyond10x.github.io/getting-started/",
+        "mode": "browser",
+        "estimatedMinutes": 2,
+        "outcome": "Leave with one verified next step for the outcome you want."
+      },
       "accent": "#59d89d",
       "mark": "website/static/img/mark.svg",
       "shell": {
         "integration": "docusaurus",
-        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
+        "revision": "73aefe1ca268cc853ed38fb23478454496462a03"
       },
       "key": "getting-started/docs",
       "repository": {
@@ -522,11 +742,22 @@
           "kind": "executes-in"
         }
       ],
+      "adoption": {
+        "label": "Run the read-only quickstart",
+        "url": "https://beyond10x.github.io/harness/docs/getting-started",
+        "mode": "source-build",
+        "estimatedMinutes": 12,
+        "prerequisites": [
+          "Rust toolchain",
+          "Provider credentials"
+        ],
+        "outcome": "Run a provider-neutral agent loop and retain its session evidence."
+      },
       "accent": "#b9f46a",
       "mark": "website/static/img/mark.svg",
       "shell": {
         "integration": "docusaurus",
-        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
+        "revision": "73aefe1ca268cc853ed38fb23478454496462a03"
       },
       "key": "harness/docs",
       "repository": {
@@ -585,11 +816,22 @@
           "kind": "drives"
         }
       ],
+      "adoption": {
+        "label": "Observe a harness run",
+        "url": "https://beyond10x.github.io/metaharness/docs/quickstart",
+        "mode": "source-build",
+        "estimatedMinutes": 15,
+        "prerequisites": [
+          "Rust toolchain",
+          "A supported harness"
+        ],
+        "outcome": "Drive a harness through one interface and inspect its normalized event stream."
+      },
       "accent": "#4dc4e6",
       "mark": "website/static/img/logo.svg",
       "shell": {
         "integration": "docusaurus",
-        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
+        "revision": "73aefe1ca268cc853ed38fb23478454496462a03"
       },
       "key": "metaharness/docs",
       "repository": {
@@ -647,16 +889,96 @@
           "kind": "source"
         }
       ],
+      "adoption": {
+        "label": "Run a confined command",
+        "url": "https://beyond10x.github.io/substrate/docs/getting-started",
+        "mode": "source-build",
+        "estimatedMinutes": 15,
+        "prerequisites": [
+          "Linux",
+          "Rust toolchain"
+        ],
+        "outcome": "Execute a bounded process and inspect the recorded operation outcome."
+      },
       "accent": "#72b7ff",
       "mark": "website/static/img/mark.svg",
       "shell": {
         "integration": "docusaurus",
-        "revision": "0cbd1f1b6951fec95767332e3a1792f838feb62d"
+        "revision": "73aefe1ca268cc853ed38fb23478454496462a03"
       },
       "key": "substrate/docs",
       "repository": {
         "id": "substrate",
         "url": "https://github.com/beyond10x/substrate"
+      }
+    },
+    {
+      "id": "docs",
+      "name": "Worktree",
+      "summary": "A reusable Rust library and CLI for isolated Git work, recovery-aware cleanup, durable leases, and generated agent guidance.",
+      "kind": "documentation",
+      "canonicalUrl": "https://github.com/beyond10x/worktree#readme",
+      "maturity": "development",
+      "availability": "published",
+      "discoverability": "public",
+      "audiences": [
+        "adopter",
+        "developer",
+        "operator"
+      ],
+      "journeys": [
+        "build-agents",
+        "operate-services"
+      ],
+      "capabilities": [
+        "managed-worktrees",
+        "recovery-proof",
+        "agent-guidance"
+      ],
+      "sections": [
+        {
+          "label": "Install",
+          "url": "https://github.com/beyond10x/worktree#install",
+          "kind": "quickstart"
+        },
+        {
+          "label": "Use",
+          "url": "https://github.com/beyond10x/worktree#use",
+          "kind": "guide"
+        },
+        {
+          "label": "Source",
+          "url": "https://github.com/beyond10x/worktree",
+          "kind": "source"
+        }
+      ],
+      "relationships": [
+        {
+          "target": "agentplugins/docs",
+          "kind": "supports",
+          "label": "Generates workspace-hygiene guidance"
+        }
+      ],
+      "adoption": {
+        "label": "Activate managed worktrees",
+        "url": "https://github.com/beyond10x/worktree#use",
+        "mode": "source-build",
+        "estimatedMinutes": 8,
+        "prerequisites": [
+          "Rust toolchain",
+          "Git"
+        ],
+        "outcome": "Create one isolated checkout with a durable cleanup and recovery record."
+      },
+      "accent": "#6aa8ff",
+      "shell": {
+        "integration": "portable",
+        "revision": "local"
+      },
+      "key": "worktree/docs",
+      "repository": {
+        "id": "worktree",
+        "url": "https://github.com/beyond10x/worktree"
       }
     }
   ]
