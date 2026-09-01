@@ -37,6 +37,10 @@ layer, not a new authority for their research, APIs or designs.
   developer-preview surface and current service maturity.
 - `connectors/README.md`, `docs/design/01-domain-model.md` and `docs/design/02-architecture.md` own
   the connector model and current maturity.
+- `identity/README.md`, `agent-platform/README.md` and `workflow/README.md` own the public service
+  boundaries for identity, agents and workflows.
+- `eventlog/README.md` owns the durable event-state library boundary, and `research/README.md` owns
+  the reproducible interaction study and its methodological limits.
 - `atlas/README.md` owns the cross-repository map.
 
 When this site and an owning repository disagree, fix the introduction to match the owner. Do not
@@ -75,7 +79,7 @@ npm run build
 `onBrokenLinks: 'throw'` is part of the contract. The Pages workflow builds pull requests and
 deploys only trusted pushes to `main` or a manual dispatch.
 
-## Automation identity
+## Public source
 
-Anything not typed by Timo commits and pushes as the org-owned `b10x-bot` GitHub App. Use
-`scripts/as-bot.sh commit …` and `scripts/as-bot.sh push …`; never commit credentials or tokens.
+Organization delivery credentials and bot-authenticated remote operations are provided by
+Atlas-owned tooling outside this public repository. Never commit credential machinery or tokens.

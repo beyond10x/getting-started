@@ -31,6 +31,12 @@ surfaces:
       - {target: agentplugins/docs, kind: uses, label: Add governed agent guidance}
       - {target: worktree/docs, kind: uses, label: Keep agent checkouts recoverable}
       - {target: docs-system/docs, kind: uses, label: Share the public documentation contract}
+      - {target: identity/docs, kind: uses, label: Establish tenant and principal authority}
+      - {target: eventlog/docs, kind: uses, label: Build durable owner state from events}
+      - {target: connectors/docs, kind: uses, label: Reach external systems under grants}
+      - {target: agent-platform/docs, kind: uses, label: Manage and run product-neutral agents}
+      - {target: workflow/docs, kind: uses, label: Define and inspect durable workflows}
+      - {target: research/docs, kind: uses, label: See what agent work can be automated}
     adoption:
       label: Choose a journey
       url: https://beyond10x.github.io/getting-started/

@@ -5,6 +5,90 @@
   "feed_url": "https://beyond10x.github.io/getting-started/changes/feed.json",
   "items": [
     {
+      "id": "agent-platform/public-surface-2026-09-01",
+      "url": "https://github.com/beyond10x/agent-platform",
+      "title": "Agent Platform joins the public ecosystem surface",
+      "content_text": "Agent Platform is now public and advertises its source, local service documentation, generated OpenAPI contract, dependencies, and first-run path through the shared b10x docs contract.",
+      "date_published": "2026-09-01T12:00:00Z",
+      "tags": [
+        "agent-platform",
+        "capability",
+        "significant",
+        "build-agents",
+        "operate-services"
+      ]
+    },
+    {
+      "id": "connectors/public-surface-2026-09-01",
+      "url": "https://github.com/beyond10x/connectors",
+      "title": "Connectors joins the public ecosystem surface",
+      "content_text": "Connectors now exposes its catalog, architecture, adoption guides, dependencies, and current maturity through the shared b10x documentation contract.",
+      "date_published": "2026-09-01T12:00:00Z",
+      "tags": [
+        "connectors",
+        "capability",
+        "significant",
+        "build-agents",
+        "operate-services"
+      ]
+    },
+    {
+      "id": "eventlog/public-surface-2026-09-01",
+      "url": "https://github.com/beyond10x/eventlog",
+      "title": "Eventlog joins the public ecosystem surface",
+      "content_text": "Eventlog now publishes its library boundary, crate layout, adoption path, and downstream role through the shared b10x documentation contract.",
+      "date_published": "2026-09-01T12:00:00Z",
+      "tags": [
+        "eventlog",
+        "capability",
+        "significant",
+        "build-agents",
+        "operate-services"
+      ]
+    },
+    {
+      "id": "identity/public-surface-2026-09-01",
+      "url": "https://github.com/beyond10x/identity",
+      "title": "Identity joins the public ecosystem surface",
+      "content_text": "Identity now advertises its service boundary, local adoption path, API reference, dependencies, and deployment maturity through the shared b10x documentation contract.",
+      "date_published": "2026-09-01T12:00:00Z",
+      "tags": [
+        "identity",
+        "capability",
+        "significant",
+        "build-agents",
+        "operate-services"
+      ]
+    },
+    {
+      "id": "research/public-surface-2026-09-01",
+      "url": "https://github.com/beyond10x/research",
+      "title": "Agent interaction research joins public discovery",
+      "content_text": "The reproducible interaction study now publishes its question, deterministic pipeline, adoption path, and relationship to agent guidance through the shared b10x documentation contract.",
+      "date_published": "2026-09-01T12:00:00Z",
+      "tags": [
+        "research",
+        "research",
+        "significant",
+        "understand",
+        "build-agents"
+      ]
+    },
+    {
+      "id": "workflow/public-surface-2026-09-01",
+      "url": "https://github.com/beyond10x/workflow",
+      "title": "Workflow joins the public ecosystem surface",
+      "content_text": "Workflow now publishes its product-neutral boundary, current maturity, adoption path, and dependencies through the shared b10x documentation contract.",
+      "date_published": "2026-09-01T12:00:00Z",
+      "tags": [
+        "workflow",
+        "capability",
+        "significant",
+        "build-agents",
+        "operate-services"
+      ]
+    },
+    {
       "id": "docs-system/adoption-and-change-contracts-0.2.0",
       "url": "https://github.com/beyond10x/docs-system/releases/tag/0.2.0",
       "title": "Adoption and ecosystem changes become typed public contracts",
@@ -316,6 +400,48 @@
       ]
     },
     {
+      "id": "connectors/v0.3.3",
+      "url": "https://github.com/beyond10x/connectors/releases/tag/v0.3.3",
+      "title": "Connectors v0.3.3",
+      "content_text": "Connectors released version v0.3.3.",
+      "date_published": "2026-09-01T04:57:11Z",
+      "tags": [
+        "connectors",
+        "release",
+        "notable",
+        "build-agents",
+        "operate-services"
+      ]
+    },
+    {
+      "id": "identity/0.4.0",
+      "url": "https://github.com/beyond10x/identity/releases/tag/0.4.0",
+      "title": "Identity 0.4.0",
+      "content_text": "Identity released version 0.4.0.",
+      "date_published": "2026-09-01T03:50:24Z",
+      "tags": [
+        "identity",
+        "release",
+        "notable",
+        "build-agents",
+        "operate-services"
+      ]
+    },
+    {
+      "id": "connectors/v0.3.2",
+      "url": "https://github.com/beyond10x/connectors/releases/tag/v0.3.2",
+      "title": "Connectors v0.3.2",
+      "content_text": "Connectors released version v0.3.2.",
+      "date_published": "2026-09-01T03:47:23Z",
+      "tags": [
+        "connectors",
+        "release",
+        "notable",
+        "build-agents",
+        "operate-services"
+      ]
+    },
+    {
       "id": "ess/0.1.1",
       "url": "https://github.com/beyond10x/ess/releases/tag/0.1.1",
       "title": "Ess 0.1.1",
@@ -327,6 +453,20 @@
         "notable",
         "operate-services",
         "specify"
+      ]
+    },
+    {
+      "id": "identity/0.3.2",
+      "url": "https://github.com/beyond10x/identity/releases/tag/0.3.2",
+      "title": "Identity 0.3.2",
+      "content_text": "Identity released version 0.3.2.",
+      "date_published": "2026-09-01T02:37:11Z",
+      "tags": [
+        "identity",
+        "release",
+        "notable",
+        "build-agents",
+        "operate-services"
       ]
     },
     {
@@ -372,6 +512,20 @@
       ]
     },
     {
+      "id": "connectors/v0.3.1",
+      "url": "https://github.com/beyond10x/connectors/releases/tag/v0.3.1",
+      "title": "Connectors v0.3.1",
+      "content_text": "Connectors released version v0.3.1.",
+      "date_published": "2026-09-01T02:04:08Z",
+      "tags": [
+        "connectors",
+        "release",
+        "notable",
+        "build-agents",
+        "operate-services"
+      ]
+    },
+    {
       "id": "docs-system/0.1.2",
       "url": "https://github.com/beyond10x/docs-system/releases/tag/0.1.2",
       "title": "Docs System 0.1.2",
@@ -407,6 +561,48 @@
       "date_published": "2026-09-01T01:51:43Z",
       "tags": [
         "docs-system",
+        "release",
+        "notable",
+        "build-agents",
+        "operate-services"
+      ]
+    },
+    {
+      "id": "identity/0.3.0",
+      "url": "https://github.com/beyond10x/identity/releases/tag/0.3.0",
+      "title": "Identity 0.3.0",
+      "content_text": "Identity released version 0.3.0.",
+      "date_published": "2026-09-01T00:21:27Z",
+      "tags": [
+        "identity",
+        "release",
+        "notable",
+        "build-agents",
+        "operate-services"
+      ]
+    },
+    {
+      "id": "identity/0.2.1",
+      "url": "https://github.com/beyond10x/identity/releases/tag/0.2.1",
+      "title": "Identity 0.2.1",
+      "content_text": "Identity released version 0.2.1.",
+      "date_published": "2026-09-01T00:09:06Z",
+      "tags": [
+        "identity",
+        "release",
+        "notable",
+        "build-agents",
+        "operate-services"
+      ]
+    },
+    {
+      "id": "identity/0.2.0",
+      "url": "https://github.com/beyond10x/identity/releases/tag/0.2.0",
+      "title": "Identity 0.2.0",
+      "content_text": "Identity released version 0.2.0.",
+      "date_published": "2026-09-01T00:03:22Z",
+      "tags": [
+        "identity",
         "release",
         "notable",
         "build-agents",
@@ -483,6 +679,34 @@
         "notable",
         "operate-services",
         "specify"
+      ]
+    },
+    {
+      "id": "agent-platform/0.2.0",
+      "url": "https://github.com/beyond10x/agent-platform/releases/tag/0.2.0",
+      "title": "Agent Platform 0.2.0",
+      "content_text": "Agent Platform released version 0.2.0.",
+      "date_published": "2026-08-31T19:55:30Z",
+      "tags": [
+        "agent-platform",
+        "release",
+        "notable",
+        "build-agents",
+        "operate-services"
+      ]
+    },
+    {
+      "id": "agent-platform/0.1.0",
+      "url": "https://github.com/beyond10x/agent-platform/releases/tag/0.1.0",
+      "title": "Agent Platform 0.1.0",
+      "content_text": "Agent Platform released version 0.1.0.",
+      "date_published": "2026-08-31T19:28:14Z",
+      "tags": [
+        "agent-platform",
+        "release",
+        "notable",
+        "build-agents",
+        "operate-services"
       ]
     },
     {
@@ -1238,6 +1462,20 @@
       ]
     },
     {
+      "id": "connectors/v0.2.1",
+      "url": "https://github.com/beyond10x/connectors/releases/tag/v0.2.1",
+      "title": "Connectors v0.2.1",
+      "content_text": "Connectors released version v0.2.1.",
+      "date_published": "2026-08-25T13:08:32Z",
+      "tags": [
+        "connectors",
+        "release",
+        "notable",
+        "build-agents",
+        "operate-services"
+      ]
+    },
+    {
       "id": "entity-runtime/0.3.0",
       "url": "https://github.com/beyond10x/entity-runtime/releases/tag/0.3.0",
       "title": "Entity Runtime 0.3.0",
@@ -1250,6 +1488,20 @@
         "build-agents",
         "operate-services",
         "specify"
+      ]
+    },
+    {
+      "id": "connectors/v0.2.0",
+      "url": "https://github.com/beyond10x/connectors/releases/tag/v0.2.0",
+      "title": "Connectors v0.2.0",
+      "content_text": "Connectors released version v0.2.0.",
+      "date_published": "2026-08-25T09:39:10Z",
+      "tags": [
+        "connectors",
+        "release",
+        "notable",
+        "build-agents",
+        "operate-services"
       ]
     },
     {
