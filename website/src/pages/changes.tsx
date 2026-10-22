@@ -5,9 +5,9 @@ import {ChangeTimelineEntry} from '@beyond10x/docs-system/components';
 import type {
   ChangeImpact,
   ChangeLedger,
-  DocumentationSurface,
   EcosystemRegistry,
   Journey,
+  RegistrySurface,
 } from '@beyond10x/docs-system/types';
 import ledgerDocument from '../../static/changes.json';
 import registryDocument from '../../static/ecosystem.json';
@@ -15,7 +15,7 @@ import styles from './ecosystem.module.css';
 
 const ledger = ledgerDocument as ChangeLedger;
 const registry = registryDocument as EcosystemRegistry;
-const surfaces = new Map<string, DocumentationSurface>(
+const surfaces = new Map<string, RegistrySurface>(
   registry.surfaces.map((surface) => [surface.key, surface]),
 );
 const journeys: Array<{id: Journey | 'all'; label: string}> = [
